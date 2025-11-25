@@ -1,6 +1,8 @@
 #include "Circle.h"
-#define _USE_MATH_DEFINES
-#include <cmath>
+
+
+
+const double PI = 3.14159265358979323846;
 
 // Constructor
 Circle::Circle(double x, double y, double r, std::string n)
@@ -24,6 +26,6 @@ double Circle::getRadius() const {
 
 // Implementation of calcArea
 void Circle::calcArea() {
-    double area = M_PI * radius * radius;
+    double area = PI * radius * radius;
     setArea(area);  // Call base class setter to store area
 }
